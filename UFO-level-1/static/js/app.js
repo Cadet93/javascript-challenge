@@ -5,7 +5,7 @@ var tableData = data;
 var button = d3.select("#filter-btn");
 
 // Select the form
-var form = d3.select(".form-group");
+var form = d3.select("form");
 
 //variable for table body to add rows to
 var tbody = d3.select("tbody");
@@ -15,7 +15,7 @@ var inputElement = d3.select("#datetime");
 
 //event handlers
 button.on("click", runEnter);
-form.on("submit", runEnter);
+form.on("change", runEnter);
 
 //Use d3 to update each cell's text with
 //Sighting values (date/time, city, state, country, shape, comment)
