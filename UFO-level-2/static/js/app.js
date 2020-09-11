@@ -13,9 +13,7 @@ var tbody = d3.select("tbody");
 //event handlers
 button.on("click", runEnter);
 form.on("change", runEnter);
-//document.querySelector('.form-group').attachEvent('submit', runEnter);
 
-//d3.seletALL('.filter').on('change', runEnter);
 
 //Use d3 to update each cell's text with
 //Sighting values (date/time, city, state, country, shape, comment)
@@ -32,7 +30,7 @@ tableData.forEach(function (ufosightings) {
 });
 
 // Complete the event handler function for the form
-function runEnter(event) {
+function runEnter() {
 
   tbody.html("");
 
