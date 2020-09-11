@@ -67,11 +67,11 @@ function runEnter() {
   }
 
   if (countryvalue) {
-    filteredData = filteredData.filter(obj => obj.state.toLowerCase() === statevalue.toLowerCase());
+    filteredData = filteredData.filter(obj => obj.country.toLowerCase() === countryvalue.toLowerCase());
   }
 
   if (shapevalue) {
-    filteredData = filteredData.filter(obj => obj.state.toLowerCase() === statevalue.toLowerCase());
+    filteredData = filteredData.filter(obj => obj.shape.toLowerCase() === shapevalue.toLowerCase());
   }
 
   console.log(filteredData);
