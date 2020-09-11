@@ -32,7 +32,8 @@ tableData.forEach(function (ufosightings) {
 // Complete the event handler function for the form
 function runEnter() {
 
-  
+  //clear previous searches rows
+  tbody.html("");
 
   // Prevent the page from refreshing
   d3.event.preventDefault();
@@ -77,7 +78,6 @@ function runEnter() {
   console.log(filteredData);
 
   if (filteredData.length >= 1) {
-    tbody.html("");
     //Sighting values (date/time, city, state, country, shape, comment)
     filteredData.forEach(function (filteredsightings) {
       console.log(filteredsightings);
@@ -92,6 +92,7 @@ function runEnter() {
     });
   }
   else {
+
     alert("No Results Found.")
 
   }
